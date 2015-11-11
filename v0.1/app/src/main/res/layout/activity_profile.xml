@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#629cff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Asignaturas"
+            android:id="@+id/tv_profile_title"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ib_profile_exit"
+                android:layout_gravity="right"
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:cropToPadding="false"
+                android:layout_weight="6"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_exit"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_profile_subjectList"
+        android:choiceMode="singleChoice" />
+
+</LinearLayout>
+
